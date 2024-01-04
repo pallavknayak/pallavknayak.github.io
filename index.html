@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="open.css" />
+    <script>
+      function openUp() {
+        const $opentop = document.querySelector("#opentop");
+        const $top = document.querySelector("#top");
+        const $front = document.querySelector("#front");
+        const $back = document.querySelector("#back");
+        const $letter = document.querySelector("#letter");
+        const $button = document.querySelector("button");
+
+        $opentop.beginElement();
+        $top.style.zIndex = 2;
+
+        $top.classList.add("animate");
+        $front.classList.add("animate");
+        $back.classList.add("animate");
+        $button.classList.add("animate");
+        $letter.classList.add("animate");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="text">
+      <h1>Hi Avipsa ! Listen this is for you 💖</h1>
+    </div>
+    <div id="envelope">
+      <div id="back">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          height="300"
+          width="300"
+        >
+          <polygon
+            points="0,100 300,100 300,300 0,300"
+            style="fill: #4a274a; stroke: none; stroke-width: 0"
+          />
+        </svg>
+      </div>
+      <div id="front">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          height="300"
+          width="300"
+        >
+          <polygon
+            points="0,100 150,200 300,100 300,300 0,300"
+            style="fill: #2abad0; stroke: #ffffff; stroke-width: 3"
+          />
+        </svg>
+      </div>
+      <div id="top">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          height="300"
+          width="300"
+        >
+          <polygon
+            points="0,100 150,200 300,100"
+            style="fill: #2abad0; stroke: #ffffff; stroke-width: 2"
+          >
+            <animate
+              id="opentop"
+              attributeName="points"
+              dur="0.5s"
+              fill="freeze"
+              begin="indefinite"
+              from="0,100 150,200 300,100"
+              to="0,100 150,0 300,100"
+            />
+          </polygon>
+        </svg>
+      </div>
+
+      <div id="letter">
+        <h1>For My <span>One & Only</span></h1>
+
+        <!-- <img src="https://i.postimg.cc/5yZQnDpb/ukraine-7424066-640.webp" />-->
+        <p>
+          As I sit down to write you this letter, my heart is filled with an overwhelming longing for the warmth of your presence. Distance may keep us physically apart, but it can never diminish my love for you strong and unwavering. I find myself missing you more with each passing day, yearning for the moments we shared and the laughter we created together.
+          Avipsa, you are the one who has captured my heart and soul in a way no one else ever has. The miles between us only serve to emphasize the depth of my feelings for you. Your absence has made me realize just how much you mean to me, and how incomplete my days are without the joy of your company.
+          You are the beacon of light that guides me through the darkness, the constant source of inspiration that fuels my dreams. Your beauty, both inside and out, captivates me, and your kindness touches the deepest corners of my heart. Your ambition is a testament to the incredible person you are, and I am endlessly proud to be by your side, even if it's from a distance.
+          In this journey, I want you to know that I am committed to pampering and protecting you, now and always. Your happiness is my priority, and I would go to great lengths to see that beautiful smile on your face. You make me want to be a better man, to rise to the challenges of life and become the person you deserve.
+
+          Avipsa, I promise to continue loving you with all my heart, to be there for you in every triumph and challenge. Our love is a flame that burns brighter with each passing day, and no amount of distance can extinguish it. I am willing to fight the world to ensure that your dreams come true and that the radiance of your spirit never dims. <br />
+          <br />
+          Would you continue being my girlfriend?
+          This letter is a token of my love for you. <br />
+          If You Accept
+          <a href="index1.html">Click Here</a>
+        </p>
+      </div>
+      <button onclick="openUp()">Click Here</button>
+    </div>
+  </body>
+</html>
